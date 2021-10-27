@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  php8-lambda:
+    image: leoqbc/php8-aws-lambda-runtime:latest
+    volumes:
+      - ./src:/var/task
+    ports:
+      - 9000:8080
